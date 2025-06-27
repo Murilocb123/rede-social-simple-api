@@ -1,14 +1,20 @@
+Claro! Abaixo está o conteúdo atualizado do arquivo `README.md` conforme a nova rota e estrutura do projeto:
+
+---
+
 ### 📄 `README.md`
 
 ```markdown
-# 📸 API de Rede Social de Fotos
+# 📸 API - Feed de Fotos | Rede Social
 
-Esta é uma API RESTful simples desenvolvida com **FastAPI** em Python, simulando uma rede social onde usuários compartilham fotos. Esta aplicação faz parte do projeto da disciplina de **Cloud Computing**, com foco em implantação de API e automação DevOps.
+Este projeto implementa uma API RESTful com **FastAPI** para simular o **feed de postagens de uma rede social de fotos**. A aplicação faz parte do Trabalho Final da disciplina de **Cloud Computing**, com foco em práticas DevOps (CI/CD, IaC e automação de deploy).
+
+---
 
 ## ✅ Funcionalidades
 
-- `GET /status` – Verifica se a API está funcionando.
-- `GET /fotos` – Retorna uma lista de 10 registros realistas de fotos postadas por usuários.
+- `GET /status`: Verifica se a API está funcionando.
+- `GET /feed_fotos`: Retorna as postagens de fotos mais recentes, simulando um feed realista de rede social com pelo menos 10 entradas.
 
 ---
 
@@ -17,13 +23,13 @@ Esta é uma API RESTful simples desenvolvida com **FastAPI** em Python, simuland
 ```
 
 photo-api/
-├── main.py                # Arquivo principal da API
+├── main.py                  # Arquivo principal da API
 ├── data/
-│   └── fotos.json         # Arquivo com os dados simulados
+│   └── feed\_fotos.json      # Dados simulados do feed
 ├── tests/
-│   └── test\_api.py        # Testes unitários com Pytest
-├── requirements.txt       # Lista de dependências do projeto
-└── README.md              # Documentação do projeto
+│   └── test\_api.py          # Testes unitários com Pytest
+├── requirements.txt         # Dependências da aplicação
+└── README.md                # Este arquivo
 
 ````
 
@@ -41,9 +47,12 @@ cd photo-api
 ### 2. Crie um ambiente virtual (opcional, mas recomendado)
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+python -m venv .venv
+# Ative:
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+source .venv/bin/activate
 ```
 
 ### 3. Instale as dependências
@@ -52,41 +61,70 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
-### 4. Inicie a API
+### 4. Execute a API
 
 ```bash
 uvicorn main:app --reload
 ```
 
-Acesse:
+### 5. Acesse no navegador ou Postman:
 
 * `http://localhost:8000/status`
-* `http://localhost:8000/fotos`
+* `http://localhost:8000/feed_fotos`
 
 ---
 
-## 🧪 Rodando os testes unitários
+## 🧪 Rodando os testes
 
-Os testes foram criados com **Pytest** e podem ser executados com:
+A aplicação possui testes automatizados com **pytest** para garantir o funcionamento das rotas:
 
 ```bash
-python -m pytest -v   
+pytest
 ```
 
 ---
 
-## 📦 Requisitos
+## 🧾 Exemplo de retorno (`GET /feed_fotos`)
 
-* Python 3.9+
-* FastAPI
-* Uvicorn
-* Pytest
+```json
+[
+  {
+    "id_postagem": "post987",
+    "url_imagem": "foto_praia_sunset.jpg",
+    "usuario_nickname": "AventureiroSol",
+    "descricao": "Pôr do sol incrível na praia hoje! #sunset #praia #natureza",
+    "data_postagem": "2025-06-04T10:05:00Z",
+    "curtidas": 152,
+    "comentarios_count": 12,
+    "avatar_usuario": "avatar_aventureiro.png"
+  }
+]
+```
 
 ---
 
-## 📝 Autor
+## 📘 Tecnologias utilizadas
 
-Trabalho acadêmico desenvolvido por Murilo Costa Bittencourt e Ramon Diego Valentim para a disciplina de Cloud Computing do curso de Sistemas de Informação – UNIDAVI.
+* Python 3.11
+* FastAPI
+* Uvicorn
+* Pytest
+* HTTPX (para testes)
 
+---
+
+## 👤 Autor
+
+Trabalho desenvolvido por Murilo Costa Bittencourt e Ramon Diego Valentim
+Disciplina: Cloud Computing
 Professor: Ademar Perfoll Junior
+Curso: Sistemas de Informação - UNIDAVI
+Data de entrega: 27/06/2025
 
+---
+
+## 📌 Observações
+
+Este projeto integra a primeira etapa do fluxo DevOps simulado e será utilizado nas próximas etapas com CI, Terraform e Ansible.
+
+```
