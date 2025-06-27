@@ -28,4 +28,4 @@ jobs:
 
       - name: 🧪 Rodar testes unitários
         run: |
-          pytest
+          python -m pytest -v
