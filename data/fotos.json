@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "usuario": "ana_silva",
+    "url_imagem": "https://picsum.photos/id/1011/600/400",
+    "descricao": "Nascer do sol na montanha",
+    "data_postagem": "2025-06-20",
+    "curtidas": 120
+  },
+  {
+    "id": 2,
+    "usuario": "joao_p",
+    "url_imagem": "https://picsum.photos/id/1012/600/400",
+    "descricao": "Meu cachorro no parque",
+    "data_postagem": "2025-06-21",
+    "curtidas": 89
+  },
+  {
+    "id": 3,
+    "usuario": "maria_lopes",
+    "url_imagem": "https://picsum.photos/id/1013/600/400",
+    "descricao": "Café da manhã perfeito ☕",
+    "data_postagem": "2025-06-22",
+    "curtidas": 142
+  },
+  {
+    "id": 4,
+    "usuario": "carlos_tech",
+    "url_imagem": "https://picsum.photos/id/1014/600/400",
+    "descricao": "Setup gamer atualizado",
+    "data_postagem": "2025-06-23",
+    "curtidas": 310
+  },
+  {
+    "id": 5,
+    "usuario": "juliana_fit",
+    "url_imagem": "https://picsum.photos/id/1015/600/400",
+    "descricao": "Treino concluído 💪",
+    "data_postagem": "2025-06-23",
+    "curtidas": 245
+  },
+  {
+    "id": 6,
+    "usuario": "pedro_viaja",
+    "url_imagem": "https://picsum.photos/id/1016/600/400",
+    "descricao": "Praia deserta em Santa Catarina",
+    "data_postagem": "2025-06-24",
+    "curtidas": 198
+  },
+  {
+    "id": 7,
+    "usuario": "sofia_art",
+    "url_imagem": "https://picsum.photos/id/1018/600/400",
+    "descricao": "Nova pintura em aquarela 🎨",
+    "data_postagem": "2025-06-25",
+    "curtidas": 163
+  },
+  {
+    "id": 8,
+    "usuario": "lucas_dev",
+    "url_imagem": "https://picsum.photos/id/1019/600/400",
+    "descricao": "Projeto open source finalizado",
+    "data_postagem": "2025-06-25",
+    "curtidas": 134
+  },
+  {
+    "id": 9,
+    "usuario": "bia_gourmet",
+    "url_imagem": "https://picsum.photos/id/1020/600/400",
+    "descricao": "Bolo de cenoura com cobertura de chocolate 🍰",
+    "data_postagem": "2025-06-26",
+    "curtidas": 256
+  },
+  {
+    "id": 10,
+    "usuario": "rafa_outdoor",
+    "url_imagem": "https://picsum.photos/id/1021/600/400",
+    "descricao": "Trilha nos cânions do sul",
+    "data_postagem": "2025-06-26",
+    "curtidas": 178
+  }
+]
