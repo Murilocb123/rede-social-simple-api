@@ -8,8 +8,10 @@ def test_status():
     assert response.status_code == 200
     assert response.json() == {"status": "API em funcionamento"}
 
-def test_get_fotos():
-    response = client.get("/fotos")
+def test_feed_fotos():
+    response = client.get("/feed_fotos")
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
-    assert len(response.json()) >= 10
+    data = response.json()
+    assert isinstance(data, list)
+    assert len(data) >= 10
+    assert "id_postagem" in data[0]

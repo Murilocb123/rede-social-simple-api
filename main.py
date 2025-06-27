@@ -4,13 +4,13 @@ import json
 
 app = FastAPI()
 
-with open("data/fotos.json", "r", encoding="utf-8") as f:
-    fotos = json.load(f)
+with open("data/feed_fotos.json", "r", encoding="utf-8") as f:
+    feed_fotos = json.load(f)
 
 @app.get("/status")
-def status():
+def get_status():
     return {"status": "API em funcionamento"}
 
-@app.get("/fotos")
-def get_fotos():
-    return JSONResponse(content=fotos)
+@app.get("/feed_fotos")
+def get_feed_fotos():
+    return JSONResponse(content=feed_fotos)

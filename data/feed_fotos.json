@@ -1,0 +1,102 @@
+[
+  {
+    "id_postagem": "post987",
+    "url_imagem": "foto_praia_sunset.jpg",
+    "usuario_nickname": "AventureiroSol",
+    "descricao": "Pôr do sol incrível na praia hoje! #sunset #praia #natureza",
+    "data_postagem": "2025-06-04T10:05:00Z",
+    "curtidas": 152,
+    "comentarios_count": 12,
+    "avatar_usuario": "avatar_aventureiro.png"
+  },
+  {
+    "id_postagem": "post654",
+    "url_imagem": "comida_deliciosa_restaurante.jpg",
+    "usuario_nickname": "GourmetExplorador",
+    "descricao": "Experimentando o novo prato do chef! Simplesmente divino. 😋 #foodie #gastronomia",
+    "data_postagem": "2025-06-03T20:15:00Z",
+    "curtidas": 230,
+    "comentarios_count": 25,
+    "avatar_usuario": "avatar_gourmet.png"
+  },
+  {
+    "id_postagem": "post321",
+    "url_imagem": "trilha_montanha.jpg",
+    "usuario_nickname": "ExploradoraMontes",
+    "descricao": "Conquistei mais um pico! 🏞️ #trilha #aventura",
+    "data_postagem": "2025-06-03T15:30:00Z",
+    "curtidas": 180,
+    "comentarios_count": 18,
+    "avatar_usuario": "avatar_montes.png"
+  },
+  {
+    "id_postagem": "post198",
+    "url_imagem": "cafe_manha_fofo.jpg",
+    "usuario_nickname": "CafenaArte",
+    "descricao": "Café da manhã + arte = 💖 #coffeetime",
+    "data_postagem": "2025-06-03T08:00:00Z",
+    "curtidas": 98,
+    "comentarios_count": 10,
+    "avatar_usuario": "avatar_cafena.png"
+  },
+  {
+    "id_postagem": "post432",
+    "url_imagem": "treino_feroz.jpg",
+    "usuario_nickname": "MarombaLife",
+    "descricao": "Treino de pernas concluído com sucesso! 🏋️‍♂️ #fitness",
+    "data_postagem": "2025-06-02T18:00:00Z",
+    "curtidas": 204,
+    "comentarios_count": 16,
+    "avatar_usuario": "avatar_maromba.png"
+  },
+  {
+    "id_postagem": "post777",
+    "url_imagem": "livro_chuva.jpg",
+    "usuario_nickname": "LeituraCalma",
+    "descricao": "Dia de chuva + chá + livro novo 🌧️📖",
+    "data_postagem": "2025-06-02T12:45:00Z",
+    "curtidas": 145,
+    "comentarios_count": 9,
+    "avatar_usuario": "avatar_leitura.png"
+  },
+  {
+    "id_postagem": "post531",
+    "url_imagem": "jantar_romantico.jpg",
+    "usuario_nickname": "CasalViajante",
+    "descricao": "Jantar à luz de velas na Toscana 🍷",
+    "data_postagem": "2025-06-01T21:00:00Z",
+    "curtidas": 289,
+    "comentarios_count": 30,
+    "avatar_usuario": "avatar_casal.png"
+  },
+  {
+    "id_postagem": "post864",
+    "url_imagem": "bike_trilha.jpg",
+    "usuario_nickname": "PedalandoLivre",
+    "descricao": "Trilha de domingo 🚵‍♀️",
+    "data_postagem": "2025-06-01T09:30:00Z",
+    "curtidas": 132,
+    "comentarios_count": 8,
+    "avatar_usuario": "avatar_pedala.png"
+  },
+  {
+    "id_postagem": "post909",
+    "url_imagem": "pintura_moderno.jpg",
+    "usuario_nickname": "ArtistaUrbano",
+    "descricao": "Novo projeto de arte urbana 🖌️",
+    "data_postagem": "2025-05-31T14:00:00Z",
+    "curtidas": 199,
+    "comentarios_count": 11,
+    "avatar_usuario": "avatar_arte.png"
+  },
+  {
+    "id_postagem": "post1001",
+    "url_imagem": "show_rock.jpg",
+    "usuario_nickname": "Rockeira",
+    "descricao": "Show da minha banda favorita! 🤘",
+    "data_postagem": "2025-05-30T22:00:00Z",
+    "curtidas": 312,
+    "comentarios_count": 44,
+    "avatar_usuario": "avatar_rockeira.png"
+  }
+]

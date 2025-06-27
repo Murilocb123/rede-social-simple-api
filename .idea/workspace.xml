@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f285751f-abd5-404e-a1c9-49ffcc6bfaaf" name="Changes" comment="" />
+    <list default="true" id="f285751f-abd5-404e-a1c9-49ffcc6bfaaf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/data/fotos.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/feed_fotos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
