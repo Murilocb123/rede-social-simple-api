@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  api:
+    build: .
+    image: tiomuri12/rede-social-api:0.0.1
+    container_name: rede_social_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: unless-stopped

@@ -1,0 +1,27 @@
+- name: Provisionar API com Docker Compose
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Atualizar pacotes
+      apt:
+        update_cache: yes
+
+    - name: Instalar dependências
+      apt:
+        name:
+          - docker.io
+          - docker-compose
+          - git
+        state: present
+
+    - name: Clonar repositório da API
+      git:
+        repo: https://github.com/Murilocb123/rede-social-simple-api.git
+        dest: /home/ubuntu/api
+        force: yes
+
+    - name: Subir containers com Docker Compose
+      shell: docker compose up -d --build
+      args:
+        chdir: /home/ubuntu/api
