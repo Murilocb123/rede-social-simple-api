@@ -22,6 +22,6 @@
         force: yes
 
     - name: Subir containers com Docker Compose
-      shell: docker compose up -d --build
+      shell: docker-compose up -d --build
       args:
         chdir: /home/ubuntu/api
