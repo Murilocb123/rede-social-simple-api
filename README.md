@@ -110,6 +110,55 @@ pytest
 * Uvicorn
 * Pytest
 * HTTPX (para testes)
+* 
+---
+
+### 🚀 Provisionamento da Infraestrutura com Terraform
+
+Este projeto utiliza **Terraform** para criar uma instância EC2 na AWS que hospedará a API da rede social de fotos.
+
+#### ✅ O que o Terraform faz:
+
+* Cria um **Security Group** com liberação das portas 22 (SSH) e 8000 (API)
+* Cria uma **instância EC2** Ubuntu 22.04 (t2.micro)
+* Executa um **script de inicialização (`user_data`)** que instala `Docker` e `pip`
+* Exibe o **IP público da instância** ao final
+
+---
+
+### ⚙️ Como executar
+
+#### 1. Configure suas credenciais no arquivo `terraform.tfvars`:
+
+```hcl
+aws_access_key = "SUA_AWS_ACCESS_KEY"
+aws_secret_key = "SUA_AWS_SECRET_KEY"
+key_name       = "nome_da_sua_chave_ssh"
+```
+
+> ⚠️ **Nunca versionar este arquivo**. Mantenha ele no `.gitignore`.
+
+---
+
+#### 2. Execute os comandos Terraform:
+
+```bash
+cd terraform
+
+terraform init
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars"
+```
+
+---
+
+### 📌 Ao final
+
+O Terraform exibirá o **endereço IP público** da instância EC2. Você usará esse IP para:
+
+* Acessar via SSH
+* Fazer o deploy da API com Ansible
+* Testar a rota `GET /feed_fotos` via navegador ou Postman
 
 ---
 

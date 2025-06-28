@@ -1,3 +1,41 @@
-.venv
-.idea
-__pycache__
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+**/terraform.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfstate.backup
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+*.log
+*.pyc
+__pycache__/
+inventory.ini
+*.pem
+
+# SSH keys (nunca versionar chaves privadas)
+id_rsa
+id_rsa.pub
+*.pem
+
+# Sistema e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (caso use playbooks ou scripts auxiliares)
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.venv/
